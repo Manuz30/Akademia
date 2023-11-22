@@ -73,23 +73,23 @@
             $this->nome = $_senha;
         }
  
-        public function cadastro()
+        public function inserir()
         {
             include("db/conn.php");
-            $sql = "CALL piUsuario(:nome, :email, :dtnascimento, :cidade, :senha)";
+            $sql = "CALL inserir (:nome, :email, :dtnascimento, :cidade, :senha)";
  
             $data = [
                 'nome' => $this->nome,
                 'email' => $this->email,
                 'dtnascimento' => $this->dtnascimento,
                 'cidade' => $this->cidade,
-                'valor' => $this->valor,
                 'senha' => $this->senha
             ];
  
             $statement = $conn->prepare($sql);
-            $statement->execute($cadastro);
- 
+            $statement->execute($data);
+           
+  
             return true;
  
         }
@@ -120,7 +120,7 @@
             {
 
                 include("db/conn.php");
-                $sql = "CALL piUsuario(:nome, :email, :dtnascimento, :cidade, :senha)";
+                $sql = "CALL deleteUsuario(:id)";
      
                 $data = [
 
@@ -128,7 +128,7 @@
                 ];
      
                 $statement = $conn->prepare($sql);
-                $statement->execute($cadastro);
+                $statement->execute($data);
      
                 return true;
      

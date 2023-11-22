@@ -34,13 +34,13 @@
  
         <?php
  
-            if ( isset($_REQUEST["Cadastrar"]) ) //evitar que o procedimento seja executado sem apertar o botão
+            if ( isset($_REQUEST["inserir"]) ) 
             {
-                include_once("class/usuario.php");
-                $u = new  Usuario(); //criar objeto da classe Produto
-                $u->create($_REQUEST["nome"], $_REQUEST["email"], $_REQUEST["dtnascimento"], $_REQUEST["cidade"], $_REQUEST["senha"]); // encapsular os valores do form no objeto produto
+                include_once("usuario.php");
+                $u = new  Usuario(); 
+                $u->create($_REQUEST["nome"], $_REQUEST["email"], $_REQUEST["dtnascimento"], $_REQUEST["cidade"], $_REQUEST["senha"]); 
                 
-                echo $u->cadastrar() == true 
+                echo $u->inserir() == true 
 
                  ?"<p>cadastrado com sucesso.</p>" 
                  :  "<p>Ocorreu um erro.</p>";
