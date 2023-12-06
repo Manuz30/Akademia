@@ -7,31 +7,35 @@
     <title>Document</title>
     <link href="assets/css/estilo.css" rel="stylesheet">
     <script src= "JavaScript/util.js"></script>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
  
-    <h1>Cadastro</h1>
-    <h2>Novo produto</h2>
- 
+    <h1>Cadastre-se aqui</h1>
+
+    <div id="cadastro">
+
     <form method="POST">
  
-        <label>Nome:</label>
-        <input type="text" name="nome" minlength="3" required><br><br>
+        <label>Nome:</label><br> 
+        <input type="text" placeholder= "Informe seu nome completo" name="nome" minlength="3" required><br><br>
  
-        <label>Email:</label>
-        <input type="emial" name="email" minlength="3" required><br><br>
+        <label>Email:</label><br>
+        <input type="emial" placeholder="Informe seu e-mail" name="email" minlength="3" required><br><br>
  
-        <label>Data nascimento:</label>
-        <input type="text" name="dtnascimento" minlength="3" required><br><br>
+        <label>Data nascimento:</label><br>
+        <input type="text" placeholder="Informe sua data de nascimento" name="dtnascimento" minlength="3" required><br><br>
  
-        <label>Cidade:</label>
-        <input type="text" name="cidade" minlength="3" required><br><br>
+        <label>Cidade:</label><br>
+        <input type="text" placeholder="Informe sua cidade"  name="cidade" minlength="3" required><br><br>
  
-        <label>Senha:</label>
-        <input type="password" name="senha" minlength="3" required><br><br>
+        <label>Senha:</label><br>
+        <input type="password" placeholder="Informe uma senha com 8 caracteres ou mais" name="senha" minlength="3" required><br><br>
  
         <input type="submit" name="inserir" value="Cadastrar">
  
+    </div>
+
         <?php
  
             if ( isset($_REQUEST["inserir"]) ) 

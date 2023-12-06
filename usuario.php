@@ -146,7 +146,26 @@
             return $data;
         }
 
+    
+
+        public function Login ($_email,$_senha)
+        {
+
+            include("db/conn.php");
+            $sql = "CALL piLoginUsuario('$_email', '$_senha')";
+            $stmt = $conn->prepare($sql);
+
+            $stmt->execute(); 
+            
+            if ($user = $stmt->fetch()) 
+            {
+                $this->nome = $user["nome"];
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+        }
     }
-
-
 ?>
