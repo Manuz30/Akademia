@@ -1,0 +1,135 @@
+body
+{
+    background-color: #262626;
+    margin: 0%;
+}
+
+h1
+{
+    color:#FFFFFF;
+    font-family: Inter;
+}
+
+label
+{
+   color:#FFFFFF;
+}
+
+#cadastro
+{
+    width: 25%;
+    padding: 1%;
+    border:#FAD824 1px solid;
+
+}
+
+input
+{
+    width: 350px;
+    margin: 9px;
+    height: 25px;
+    padding: 1%;
+    border:#FAD824 1px solid;
+    background-color:  #262626;
+    border-radius: 5px;
+    color:#FFFFFF
+}
+
+::placeholder {
+    color: #FFFFFF;
+    opacity: 0.5; 
+  }
+
+  input:autofill
+  {
+    width: 350px;
+    height: 25px;
+    padding: 1%;
+    border:#FAD824 1px solid;
+    background-color:  #262626;
+    border-radius: 5px;
+ }
+
+ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active 
+  {  
+    width: 350px;
+    height: 25px;
+    padding: 1%;
+    border:#FAD824 1px solid;
+    background-color:  #262626;
+    border-radius: 5px;
+    -webkit-text-fill-color: #262626 !important; 
+    }
+
+    header 
+{
+    background: #FAD824;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+   .menu
+   {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    height: 60px;
+   }
+
+
+header a
+
+{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: #262626;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+footer
+{
+   background-color:#FAD824;
+   text-align: center;
+   color: #262626;
+   font-family: Inter;
+   font-size: 40px;
+   font-weight: 500;
+   margin: 0;
+
+
+}
+
+
+.caixa
+
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cadastro
+{
+    margin: 130px;
+    height: 581px;
+}
+
+.imagemmoco
+{
+    margin: 100px;
+}
+
+#cadastre h1
+{
+   align-items: center;
+}

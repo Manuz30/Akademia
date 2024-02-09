@@ -1,0 +1,58 @@
+
+body
+{
+    background-color: #FAD824;
+    margin: 0%;
+}
+
+
+p
+{
+    color:#262626;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.menu
+{
+ display: flex; 
+ justify-content: space-between;
+ align-items: center;
+ gap: 25px;
+ height: 60px;
+}
+
+
+header a
+
+{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: #262626;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+header 
+{
+    background: #FAD824;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+h2
+{
+    color:#262626;
+    font-family: 'Inter', sans-serif;
+    font-size: 33px;
+    font-weight: 700;
+    margin: 10px;
+}
